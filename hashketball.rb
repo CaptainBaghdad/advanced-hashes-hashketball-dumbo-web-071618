@@ -195,18 +195,18 @@ end
 =end 
 
 def player_numbers (team_name)
-  player_numbers_list = []
+ arr = []
   game_hash.each do |key, values|
     if values[:team_name] == team_name
       values[:players].each do |player|
         player.each do |k, v|
-          if key == :number 
-            player_numbers_list << value
+          if k == :number 
+            arr << v
           end
         end
       end
     end
   end
-  player_numbers_list
+ arr
 end
 
