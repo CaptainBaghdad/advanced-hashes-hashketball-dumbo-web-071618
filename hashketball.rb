@@ -201,6 +201,11 @@ end
 
 
 def big_shoe_rebound
+  biggest_shoe_size = 0 
+  rebounds = 0 
+  game_hash.each do |key, values| 
+    
+  end 
   
   
 end 
