@@ -175,7 +175,14 @@ def player_numbers(team)
   game_hash.each do |key, value|
     if value[:name] == team 
       value.each do |players|
-        
+        players.each do |k, v|
+          if k == :number 
+            arr << 
+            
+          end #second if 
+ 
+ 
+      end #players do         
       end #value do 
       
     end #first if 
