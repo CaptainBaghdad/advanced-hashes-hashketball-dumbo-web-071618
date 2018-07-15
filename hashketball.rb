@@ -172,10 +172,11 @@ end
 
 def player_numbers(team)
   arr =[]
-  game_hash.each do ||
+  game_hash.each do |key, value|
     
     
-  end 
+    
+  end #game_hash do 
 
 end 
 
