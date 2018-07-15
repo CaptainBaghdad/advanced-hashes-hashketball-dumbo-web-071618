@@ -170,7 +170,7 @@ def team_names
   
 end 
 
-def player_numbers(team)
+=begin def player_numbers(team)
   arr =[]
   game_hash.each do |key, value|
     if value[:team_name] == team 
@@ -192,5 +192,21 @@ def player_numbers(team)
    arr
 end 
 
+=end 
 
+def player_numbers (team_name)
+  player_numbers_list = []
+  game_hash.each do |team, team_details_hash|
+    if team_details_hash[:name] == team_name
+      team_details_hash[:players].each do |player|
+        player.each do |key, value|
+          if key == :number 
+            player_numbers_list << value
+          end
+        end
+      end
+    end
+  end
+  player_numbers_list
+end
 
