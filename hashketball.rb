@@ -196,10 +196,10 @@ end
 
 def player_numbers (team_name)
   player_numbers_list = []
-  game_hash.each do |team, team_details_hash|
-    if team_details_hash[:team_name] == team_name
-      team_details_hash[:players].each do |player|
-        player.each do |key, value|
+  game_hash.each do |key, values|
+    if values[:team_name] == team_name
+      values[:players].each do |player|
+        player.each do |k, v|
           if key == :number 
             player_numbers_list << value
           end
