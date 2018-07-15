@@ -189,7 +189,7 @@ def player_numbers(team)
    puts "hey hey"
     
   end 
- 
+ end
 
 puts arr
 
