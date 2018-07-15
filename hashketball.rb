@@ -191,6 +191,7 @@ end
 
 def player_stats(player_name)
    ans = all_players.find {|players| players[:name] == players_name}
+   ans
   
   
   
