@@ -182,7 +182,10 @@ def player_numbers(team)
    end 
    
  end 
-
+ 
+ 
+ else 
+   puts "hey hey"
     
   end 
  
