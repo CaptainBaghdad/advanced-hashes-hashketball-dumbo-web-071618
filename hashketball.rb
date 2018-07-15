@@ -177,7 +177,7 @@ def player_numbers(team)
       value.each do |players|
         players.each do |k, v|
           if k == :number 
-            arr << 
+            arr << v
             
           end #second if 
  
@@ -189,7 +189,7 @@ def player_numbers(team)
     
     
   end #game_hash do 
-
+   arr
 end 
 
 
