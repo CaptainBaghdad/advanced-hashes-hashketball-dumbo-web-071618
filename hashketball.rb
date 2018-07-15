@@ -173,7 +173,7 @@ end
 def player_numbers(team)
   arr =[]
   game_hash.each do |key, value|
-    if value[:name] == team 
+    if value[:team_name] == team 
       value.each do |players|
         players.each do |k, v|
           if k == :number 
